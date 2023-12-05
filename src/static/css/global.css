@@ -1,0 +1,9 @@
+.app__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin-inline: auto;
+  background-color: #de9e9e;
+}
