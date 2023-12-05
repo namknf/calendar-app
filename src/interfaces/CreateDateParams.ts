@@ -1,4 +1,4 @@
 export interface CreateDateParams {
   locale?: string;
-  date: Date;
+  date?: Date;
 }
