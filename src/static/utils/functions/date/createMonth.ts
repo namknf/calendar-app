@@ -1,8 +1,8 @@
 import { getMonthNumberOfDays } from './getMonthNumberOfDays';
 import { createDate } from './createDate';
-import { CreateDateParams } from './../../../../interfaces/CreateDateParams';
+import { ICreateDateParams } from './../../../../interfaces';
 
-export const createMonth = (parms: CreateDateParams) => {
+export const createMonth = (parms: ICreateDateParams) => {
   const locale = parms.locale ?? 'default';
   const createdDate = createDate(parms);
   const { monthName: monthName, year, monthNumber, monthIndex } = createdDate;

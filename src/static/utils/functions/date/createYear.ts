@@ -1,9 +1,9 @@
 import { createMonth } from './createMonth';
 import { createDate } from './createDate';
-import { CreateYearParams } from './../../../../interfaces/CreateYearParams';
+import { ICreateYearParams } from './../../../../interfaces';
 
 
-export const createYear = (parms: CreateYearParams) => {
+export const createYear = (parms: ICreateYearParams) => {
   const locale = parms.locale ?? 'default';
 
   const monthCount = 12;

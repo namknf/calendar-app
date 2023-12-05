@@ -1,4 +1,4 @@
-export interface CreateDateParams {
+export interface ICreateDateParams {
   locale?: string;
   date?: Date;
 }

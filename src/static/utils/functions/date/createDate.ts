@@ -1,7 +1,7 @@
-import { CreateDateParams } from './../../../../interfaces/CreateDateParams';
+import { ICreateDateParams } from '../../../../interfaces';
 import { getWeekNumber } from './getWeekNumber';
 
-export const createDate = (parms?: CreateDateParams) => {
+export const createDate = (parms?: ICreateDateParams) => {
   const locale = parms?.locale ?? 'default';
   const dateVal = parms?.date ?? new Date();
   const dayName = dateVal.toLocaleDateString(locale, { weekday: 'long' });
